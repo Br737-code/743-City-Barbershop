@@ -1,0 +1,252 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #17212b;
+    background-color: white;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: #27313a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 22px;
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    font-size: 38px;
+}
+
+.logo h1 {
+    font-size: 16px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.logo p {
+    font-size: 12px;
+    margin: 2px 0 0;
+}
+
+
+/* Navigation */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a.active {
+    border-bottom: 2px solid white;
+    padding-bottom: 8px;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 18px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    background-color: #eef1f3;
+    text-align: center;
+    padding: 20px 20px 30px;
+}
+
+
+/* Image placeholder */
+
+.hero-image {
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a9b3ba;
+    font-size: 55px;
+    margin-bottom: 12px;
+}
+
+
+/* Hero heading */
+
+.hero h2 {
+    font-size: 25px;
+    margin: 8px 0;
+}
+
+
+/* Hero paragraph */
+
+.hero p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 22px;
+}
+
+
+/* Appointment button */
+
+.button {
+    display: inline-block;
+    background-color: #27313a;
+    color: white;
+    text-decoration: none;
+    padding: 11px 20px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.button:hover {
+    background-color: #3d4952;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services-preview {
+    text-align: center;
+    padding: 28px 8px 25px;
+}
+
+.services-preview h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+
+/* Service cards */
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.service-card {
+    background-color: #f0f2f3;
+    min-height: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-icon {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.service-card p {
+    font-size: 11px;
+    margin: 0;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #27313a;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+footer p {
+    font-size: 10px;
+    margin: 0 0 8px;
+}
+
+
+/* Social media */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 650px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .service-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    main {
+        padding: 12px;
+    }
+}
