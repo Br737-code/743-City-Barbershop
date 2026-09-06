@@ -3,9 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact | 743 City Barbershop</title>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
+
 <body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+      ✂️ <span>743 CITY<br>BARBERSHOP</span>
+    </div>
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="contact-page">
+
+        <h1>Book an Appointment</h1>
+
+        <div class="contact-grid">
+
+            <!-- Booking Form -->
+            <section class="booking-form">
+
+                <form action="#" method="post">
+
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service *</label>
+                        <select id="service" name="service" required>
+                            <option value="" selected disabled>Select a service</option>
+                            <option value="haircut">Haircut</option>
+                            <option value="beard">Beard Grooming</option>
+                            <option value="shave">Shave</option>
+                            <option value="premium">Premium Care</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Preferred Date *</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">Additional Information</label>
+                        <textarea id="notes" name="notes" placeholder="Any special requests?" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="button submit-button">Submit Booking</button>
+
+                </form>
+
+            </section>
+
+            <!-- Contact Info -->
+            <aside class="contact-info">
+
+                <h2>Contact Information</h2>
+
+                <ul class="info-list">
+                    <li>
+                        <span class="info-icon">📍</span>
+                        <span>743 City Barbershop<br>123 Main Street<br>Lae, Morobe Province, PNG</span>
+                    </li>
+                    <li>
+                        <span class="info-icon">📞</span>
+                        <span>+675 123 4567</span>
+                    </li>
+                    <li>
+                        <span class="info-icon">✉️</span>
+                        <span>info@743citybarbershop.com</span>
+                    </li>
+                    <li>
+                        <span class="info-icon">🕒</span>
+                        <span>Mon &ndash; Sat: 8:00am &ndash; 6:00pm<br>Sun: 9:00am &ndash; 3:00pm</span>
+                    </li>
+                </ul>
+
+                <h2>Follow Us</h2>
+
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Instagram">◎</a>
+                    <a href="#" aria-label="TikTok">♪</a>
+                </div>
+
+                <div class="map-embed">
+                    <iframe
+                        src="https://maps.google.com/maps?q=743%20City%20Barbershop%2C%20123%20Main%20Street%2C%20Lae%2C%20Papua%20New%20Guinea&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        width="100%"
+                        height="180"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="743 City Barbershop Location">
+                    </iframe>
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>&copy; 2026 743 City Barbershop</p>
+
+        <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">◎</a>
+            <a href="#" aria-label="TikTok">♪</a>
+        </div>
+
+    </footer>
 
 </body>
 </html>
