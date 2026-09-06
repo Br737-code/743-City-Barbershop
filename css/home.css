@@ -1,0 +1,330 @@
+/* =====================================================
+   743 CITY BARBERSHOP
+   HOME PAGE STYLESHEET
+   (loaded in addition to style.css — relies on its
+   :root color tokens, so keep both files linked together)
+===================================================== */
+
+
+/* =====================================================
+   HERO SECTION
+===================================================== */
+
+.hero {
+    position: relative;
+    isolation: isolate;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    gap: 18px;
+
+    min-height: 480px;
+
+    padding: 40px 24px;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    color: var(--color-white);
+}
+
+
+/* Hero Image (fills the section as a background) */
+
+.hero-image {
+    position: absolute;
+    inset: 0;
+
+    z-index: 0;
+
+    background-color: var(--color-dark);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+    display: block;
+}
+
+
+/* Dark overlay so text stays readable over any photo */
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    z-index: 1;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.6));
+}
+
+
+/* Hero Text (sits above the image + overlay) */
+
+.hero h2 {
+    position: relative;
+    z-index: 2;
+
+    margin: 0;
+
+    color: var(--color-white);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.hero p {
+    position: relative;
+    z-index: 2;
+
+    margin: 0;
+    max-width: 480px;
+
+    color: #f0f0f0;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+
+    font-size: 16px;
+}
+
+
+/* Hero Button */
+
+.hero .button {
+    position: relative;
+    z-index: 2;
+
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 12px 24px;
+
+    background-color: var(--color-dark);
+    color: var(--color-white);
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.hero .button:hover {
+    background-color: var(--color-dark-hover);
+
+    transform: translateY(-1px);
+}
+
+.hero .button:focus-visible {
+    outline: 2px solid var(--color-dark);
+    outline-offset: 3px;
+}
+
+
+/* =====================================================
+   SERVICES PREVIEW SECTION
+===================================================== */
+
+.services-preview {
+    margin-top: 70px;
+
+    text-align: center;
+}
+
+.services-preview h2 {
+    margin: 0 0 35px;
+
+    font-size: 26px;
+}
+
+
+/* Service Cards Grid */
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+
+/* Individual Card */
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 30px 15px;
+
+    background-color: var(--color-card-bg);
+
+    border-radius: 6px;
+
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.service-card:hover {
+    background-color: var(--color-card-bg-hover);
+
+    transform: translateY(-3px);
+}
+
+.service-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+
+    font-size: 24px;
+
+    color: var(--color-white);
+    background-color: var(--color-dark);
+
+    border-radius: 50%;
+}
+
+.service-card p {
+    margin: 0;
+
+    color: var(--color-dark);
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   FOOTER SOCIAL LINKS
+===================================================== */
+
+.social-links {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 14px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 36px;
+    height: 36px;
+
+    color: var(--color-white);
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    border: 1px solid var(--color-white);
+    border-radius: 50%;
+
+    transition: 0.2s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+}
+
+.social-links a:focus-visible {
+    outline: 2px solid var(--color-white);
+    outline-offset: 3px;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 400px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+
+    .services-preview {
+        margin-top: 55px;
+    }
+
+    .service-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .hero {
+        gap: 15px;
+        min-height: 340px;
+        padding: 30px 18px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .services-preview {
+        margin-top: 45px;
+    }
+
+    .services-preview h2 {
+        font-size: 22px;
+
+        margin-bottom: 25px;
+    }
+
+    .service-cards {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 12px;
+    }
+
+    .service-card {
+        padding: 22px 10px;
+    }
+
+    .social-links a {
+        width: 32px;
+        height: 32px;
+
+        font-size: 14px;
+    }
+}
