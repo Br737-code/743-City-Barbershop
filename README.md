@@ -24,7 +24,6 @@ The website includes the following pages:
 ## Technologies Used
 
 * HTML5
-* Basic CSS3
 * Visual Studio Code
 * Git
 * GitHub
@@ -38,8 +37,7 @@ The website includes the following pages:
 * Service and pricing information
 * Image gallery
 * Contact form
-* Images with alternative text
-* Basic CSS for readability and spacing
+* Images with alternative te
 * User-friendly page structure
 * Published using GitHub Pages
 
