@@ -43,7 +43,7 @@ The website includes the following pages:
 
 ## Development
 
-The website was developed using HTML5 and basic CSS3 in Visual Studio Code.
+The website was developed using HTML5 in Visual Studio Code.
 
 Git was used to track the development process and maintain a history of changes. GitHub was used to store the source code and project assets.
 
