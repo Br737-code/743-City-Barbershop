@@ -62,7 +62,6 @@ Git commits were used throughout the development process to record changes and s
 AI tools were used during the development process for assistance with understanding HTML concepts, troubleshooting, reviewing code, and improving the website where appropriate. The final website was reviewed and developed by the student in accordance with the assessment requirements.
 
 The website is developed using HTML5 in Visual Studio Code. Git is used to track changes throughout the development process, and GitHub is used to store the project repository.
-My Site:
 
 ## Author
 
