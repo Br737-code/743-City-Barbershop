@@ -37,7 +37,7 @@ The website includes the following pages:
 * Service and pricing information
 * Image gallery
 * Contact form
-* Images with alternative text
+* Images with alternative te
 * User-friendly page structure
 * Published using GitHub Pages
 
@@ -60,7 +60,6 @@ Git commits were used throughout the development process to record changes and s
 ## AI Use Declaration
 
 AI tools were used during the development process for assistance with understanding HTML concepts, troubleshooting, reviewing code, and improving the website where appropriate. The final website was reviewed and developed by the student in accordance with the assessment requirements.
-
 
 The website is developed using HTML5 and CSS3 in Visual Studio Code. Git is used to track changes throughout the development process, and GitHub is used to store the project repository.
 My Site:
