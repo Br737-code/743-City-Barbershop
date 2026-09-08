@@ -34,7 +34,7 @@ The website includes the following pages:
 ## Development
 
 The website is developed using HTML5 and CSS3 in Visual Studio Code. Git is used to track changes throughout the development process, and GitHub is used to store the project repository.
-My Site:https://br737-code.github.io/743-City-Barbershop/
+My Site:
 ## Author
 
 Brendan MARAN
