@@ -87,3 +87,31 @@
   max-width: 600px;
   margin: 0 auto;
 }
+
+@media (max-width: 768px) {
+
+  .about-intro {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .about-image {
+    width: 100%;
+    max-width: 350px;    /* keeps it from looking huge when stacked */
+    height: auto;        /* avoid a squished fixed-height image */
+    aspect-ratio: 4 / 3;  /* preserves the 400:300 ratio without a fixed height */
+    object-fit: cover;
+  }
+
+  .about-text {
+    max-width: 100%;
+    text-align: center;   /* optional — looks better centered under a stacked image on mobile */
+  }
+
+  .feature {
+    width: 130px;         /* slightly smaller so 2 can fit per row comfortably */
+  }
+
+}
