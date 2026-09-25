@@ -1,0 +1,106 @@
+/* ============================
+   GLOBAL / RESET
+============================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ============================
+   HEADER
+============================ */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo span {
+  line-height: 1.2;
+}
+
+/* ============================
+   NAVIGATION
+============================ */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: #ddd;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 0;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+  color: #b8860b;
+  border-bottom: 2px solid #b8860b;
+}
+
+/* ============================
+   FOOTER
+============================ */
+
+footer {
+  text-align: center;
+  padding: 25px 20px;
+  background-color: #1a1a1a;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 12px;
+}
+
+.social-links a {
+  color: #ccc;
+  font-size: 16px;
+  border: 1px solid #555;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links a:hover {
+  color: #b8860b;
+  border-color: #b8860b;
+}
