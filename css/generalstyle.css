@@ -111,11 +111,17 @@ footer {
 
 @media (max-width: 768px) {
 
+  html, body {
+    overflow-x: hidden;      /* safety net against any stray overflow */
+    width: 100%;
+  }
+
   header {
     flex-direction: column;
-    align-items: center;       /* keep children centered when stacked */
+    align-items: center;
+    width: 100%;
     padding: 15px 20px;
-    gap: 15px;
+    gap: 20px;                /* more breathing room between logo and nav */
   }
 
   .logo {
@@ -130,6 +136,10 @@ footer {
     height: auto;
   }
 
+  nav {
+    width: 100%;
+  }
+
   nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -137,18 +147,19 @@ footer {
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 10px 18px;
+    width: 100%;
+    gap: 10px 16px;
   }
 
   nav a {
     display: inline-block;
-    padding: 6px 4px;          /* bigger tap target than font-size alone */
+    padding: 6px 4px;
     font-size: 14px;
+    white-space: nowrap;      /* prevent individual links from breaking mid-word */
   }
 
 }
 
-/* Optional: extra breakpoint for small phones if nav items wrap awkwardly */
 @media (max-width: 480px) {
 
   nav ul {
