@@ -43,7 +43,7 @@ The website includes the following pages:
 
 ## Development
 
-The website was developed using HTML5 and basic CSS3 in Visual Studio Code.
+The website was developed using HTML5 in Visual Studio Code.
 
 Git was used to track the development process and maintain a history of changes. GitHub was used to store the source code and project assets.
 
@@ -61,12 +61,13 @@ Git commits were used throughout the development process to record changes and s
 
 AI tools were used during the development process for assistance with understanding HTML concepts, troubleshooting, reviewing code, and improving the website where appropriate. The final website was reviewed and developed by the student in accordance with the assessment requirements.
 
-The website is developed using HTML5 and CSS3 in Visual Studio Code. Git is used to track changes throughout the development process, and GitHub is used to store the project repository.
-My Site:
+The website is developed using HTML5 in Visual Studio Code. Git is used to track changes throughout the development process, and GitHub is used to store the project repository.
 
 ## Author
 
 **Brendan MARAN**
+## ID no. 
+**25530136**
 
 ## Project
 
