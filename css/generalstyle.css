@@ -104,3 +104,59 @@ footer {
   color: #b8860b;
   border-color: #b8860b;
 }
+
+/* ============================
+   MOBILE RESPONSIVE
+============================ */
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;       /* keep children centered when stacked */
+    padding: 15px 20px;
+    gap: 15px;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo img {
+    max-width: 120px;
+    height: auto;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px 18px;
+  }
+
+  nav a {
+    display: inline-block;
+    padding: 6px 4px;          /* bigger tap target than font-size alone */
+    font-size: 14px;
+  }
+
+}
+
+/* Optional: extra breakpoint for small phones if nav items wrap awkwardly */
+@media (max-width: 480px) {
+
+  nav ul {
+    gap: 8px 12px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+}
